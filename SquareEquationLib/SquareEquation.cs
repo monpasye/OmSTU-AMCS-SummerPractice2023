@@ -4,7 +4,7 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        double[] Result = new double [2];
+        double[] Answer = new double [2];
         double d;
         d=(b*b)-4*(a*c);
         double epsilon=1e-9;
@@ -21,20 +21,20 @@ public class SquareEquation
 
         if (d<-epsilon)
         {
-            Result=new double[0];
-            return Result;
+            Answer=new double[0];
+            return Answer;
         }
         else if (Math.Abs(d)<epsilon)
         {
-            Result=new double [1];
-            Result[0]=(-b+Math.Sqrt(d))/(2*a);
-            return Result;
+            Answer=new double [1];
+            Answer[0]=(-b+Math.Sqrt(d))/(2*a);
+            return Answer;
         }
         else
         {
-            Result[0]=(-b-Math.Sqrt(d))/(2*a);
+            Answer[0]=(-b-Math.Sqrt(d))/(2*a);
             Result[1]=(-b+Math.Sqrt(d))/(2*a);
-            return Result;
+            return Answer;
         }
     }
 }
