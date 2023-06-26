@@ -27,7 +27,7 @@ public class SquareEquation
         else if (Math.Abs(d)<epsilon)
         {
             Answer=new double [1];
-            Answer[0]=(-b+Math.Sqrt(d))/(2*a);
+            Answer[0]=(-b)/(2*a);
             return Answer;
         }
         else
