@@ -21,7 +21,7 @@ public class SquareEquation
 
         if (d<-epsilon)
         {
-            Answer=new double[];
+            Answer=new double[0];
             return Answer;
         }
         else if (Math.Abs(d)<epsilon)
@@ -32,8 +32,8 @@ public class SquareEquation
         }
         else
         {
-            Answer[0]=(-b-Math.Sqrt(d))/(2*a);
-            Answer[1]=(-b+Math.Sqrt(d))/(2*a);
+            Answer[0]=(-b+Math.Sqrt(d))/(2*a);
+            Answer[1]=(-b-Math.Sqrt(d))/(2*a);
             return Answer;
         }
     }
