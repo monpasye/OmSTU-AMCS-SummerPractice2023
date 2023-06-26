@@ -24,7 +24,7 @@ public class SquareEquation
             Answer=new double[0];
             return Answer;
         }
-        else if (-epsilon<d<0)
+        else if (-epsilon<d && d<0)
         {
             Answer=new double [1];
             Answer[0]=(-b+Math.Sqrt(d))/(2*a);
