@@ -21,10 +21,10 @@ public class SquareEquation
 
         if (d<-epsilon)
         {
-            Answer=new double[0];
+            Answer=new double[];
             return Answer;
         }
-        else if (-epsilon<d && d<0)
+        else if (Math.Abs(d)<epsilon)
         {
             Answer=new double [1];
             Answer[0]=(-b+Math.Sqrt(d))/(2*a);
