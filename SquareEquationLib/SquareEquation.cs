@@ -32,8 +32,8 @@ public class SquareEquation
         }
         else
         {
-            Answer[0]=(-b+Math.Sqrt(d))/(2*a);
-            Answer[1]=(-b-Math.Sqrt(d))/(2*a);
+            Answer[0]=(2*c)/-(b+Math.Sign(b)*Math.Sqrt(d));
+            Answer[1]=c/(a*Answer[0]);
             return Answer;
         }
     }
