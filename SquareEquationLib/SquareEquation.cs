@@ -9,7 +9,7 @@ public class SquareEquation
         d=(b*b)-4*(a*c);
         double epsilon=1e-9;
 
-        if (a<-epsilon)
+        if (Math.Abs(a)<epsilon)
         {
             throw new System.ArgumentException();
         }
