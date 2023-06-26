@@ -33,7 +33,7 @@ public class SquareEquation
         else
         {
             Answer[0]=(-b-Math.Sqrt(d))/(2*a);
-            Result[1]=(-b+Math.Sqrt(d))/(2*a);
+            Answer[1]=(-b+Math.Sqrt(d))/(2*a);
             return Answer;
         }
     }
